@@ -1,0 +1,35 @@
+﻿@model IEnumerable<_60322_Ivanov_Egor.Models.MenuItem>
+
+<div class="row">
+    <div class="col-md-3">
+        <h6>Kарта сайта</h6>
+        @*<ul>
+            <li><a href="#">Home</a></li>
+            <li class="active">
+                <a href="#">Каталог</a>
+            </li>
+            <li><a href="#">Администрирование</a></li>
+        </ul>*@
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li class="@item.Active">
+                    @Html.ActionLink(item.Name, item.Action, item.Controller)
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="col-md-3 col-md-offset-6">
+        <h6>Социальные сети</h6>
+        <div class="social-img">
+            <div>
+                <a href="http://vk.com"
+                   class="social-icon vk"></a>
+                <a href="http://twitter.com"
+                   class="social-icon twitter"></a>
+                <a href="http://facebook.com"
+                   class="social-icon facebook"></a>
+            </div>
+        </div>
+    </div>
+</div>

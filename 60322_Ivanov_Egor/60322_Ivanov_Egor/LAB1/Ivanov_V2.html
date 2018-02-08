@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 1_2</title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/MySite.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header-strip">
+        <div class="container">
+            <div class="row border-bottom-line">
+                <div class="nav navbar-left">
+                    <span class="glyphicon glyphicon-user" /><a href="#" class="navbar-link">Войти</a>
+                    <span class="glyphicon glyphicon-plus-sign" /><a href="#" class="navbar-link">Зарегистрироваться</a>
+                </div>
+                <div class="navbar-right">
+                    <a href="#">0.00 руб. ( 0 )</a><span class="glyphicon glyphicon-shopping-cart" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-logo">
+                    <!-- панель навигации-->
+                    <div class="navbar navbar-inverse" role="navigation">
+                        <div class="logo">
+                            <a class="navbar-brand" href="index.html">Ivanov</a>
+                        </div>
+                        <ul class="nav nav-pills pull-right">
+                            <li><a href="#">Home</a></li>
+                            <li class="active"><a href="#">Каталог</a></li>
+                            <li><a href="#">Администрирование</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                    <h2>Лабораторная работа 1</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--Левая боковая панель-->
+                <div class="col-md-3">
+                    <div class="navbar navbar-default">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Все категории</a></li>
+                            <li class="active"><a href="#">Кино</a></li>
+                            <li><a href="#">Книги</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/Левая боковая панель (конец)-->
+                <!--Основная панель-->
+                <div class="col-md-9">
+                    <div class="container">
+                        <h2>Список</h2>
+                        <div class="h-list">
+                            <ol>
+                                <li>Эдемент 1 списка</li>
+                                <li>Эдемент 2 списка</li>
+                            </ol>
+                        </div>
+                        <hr />
+                        <h2>Форма</h2>
+                        <form class="form-horizontal" role="form" method="get">
+                            <div class="form-group">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="cb" value="option1" id="cb1" />
+                                        <label for="cb1">Чек-бокс 1</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="cb" value="option2" />
+                                            Чек-бокс 2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="rb" value="option1" />
+                                        Радио-1
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="rb" value="option1" />
+                                        Радио-2
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-login" class="col-md-2 control-label">Логин</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="name" id="input-login" placeholder="Логин" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-password" class="col-md-2 control-label">Пароль</label>
+                                <div class="col-md-8">
+                                    <input type="password" class="form-control" name="password" id="input-password" placeholder="Логин" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-8">
+                                    <button type="submit" class="btn btn-default">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/Основная панель (конец)-->
+            </div>
+        </div>
+    </div>
+    <div class="footer-strip">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Kарта сайта</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="active">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li><a href="#">Администрирование</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                    <h6>Социальные сети</h6>
+                    <div class="social-img">
+                        <div>
+                            <a href="http://vk.com"
+                               class="social-icon vk"></a>
+                            <a href="http://twitter.com"
+                               class="social-icon twitter"></a>
+                            <a href="http://facebook.com"
+                               class="social-icon facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../Scripts/bootstrap.js"></script>
+        <script src="../Scripts/jquery-1.10.2.js"></script>
+</body>
+</html>

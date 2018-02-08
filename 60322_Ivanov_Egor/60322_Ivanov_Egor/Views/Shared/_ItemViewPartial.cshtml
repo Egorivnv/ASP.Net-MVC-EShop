@@ -1,0 +1,28 @@
+﻿@model _60322_Ivanov_Egor.DAL.Entities.Product
+
+<div class='col-md-4'>
+    <div class='thumbnail'>
+        <img height="200"
+             src="@Url.Action("GetImage", "Product", new {id=Model.ProdId }) "
+             alt='NoImage'
+             class="img-thumbnail" />
+        <div class="caption">
+            <div class="item-name">
+                <h3>@Model.ProdName</h3>
+            </div>
+            <div class="item-description">
+                @Model.ProdDescription
+            </div>
+            <div class="centered">
+                <h3 class="badge">@Model.ProdPrice</h3>
+            </div>
+            <div class="centered">
+                <a href=@Url.Action("AddToCart","Cart",new {id=Model.ProdId, returnUrl=Request.Path} ) class="btn btn-primary">
+                    <span class="glyphicon glyphicon-shopping-cart">
+                    </span>
+                    В корзину
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

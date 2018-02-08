@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab №1_1</title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/MySite.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2>Список</h2>
+        <div class="h-list">
+        <ol>
+            <li>Эдемент 1 списка</li>
+            <li>Эдемент 2 списка</li>
+        </ol>
+        </div>
+    <hr />
+        <h2>Форма</h2>
+        <form class="form-horizontal" role="form" method="get">
+            <div class="form-group">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="checkbox">
+                        <input type="checkbox" name="cb" value="option1" id="cb1" />
+                        <label for="cb1">Чек-бокс 1</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="cb" value="option2" />
+                            Чек-бокс 2
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-8 col-md-offset-2">
+                    <label class="radio-inline">
+                        <input type="radio" name="rb" value="option1" />
+                        Радио-1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="rb" value="option1" />
+                        Радио-2
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-login" class="col-md-2 control-label">Логин</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" name="name" id="input-login" placeholder="Логин" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-password" class="col-md-2 control-label">Пароль</label>
+                <div class="col-md-8">
+                    <input type="password" class="form-control" name="password" id="input-password" placeholder="Логин" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                    <button type="submit" class="btn btn-default">Отправить</button>                    
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+</body>
+</html>
